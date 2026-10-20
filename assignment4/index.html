@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Street Level — Assignment 4: Photo Composition</title>
+<style>
+  :root{
+    --paper:#f5f2ec;
+    --ink:#1b1a17;
+    --muted:#6d675e;
+    --line:#d8d2c6;
+    --accent:#a8502c;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height:1.6;
+  }
+  header{
+    max-width:1080px;
+    margin:0 auto;
+    padding:72px 28px 40px;
+    border-bottom:1px solid var(--line);
+  }
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:64px;
+    line-height:1.05;
+    letter-spacing:-0.02em;
+    margin:0 0 6px;
+  }
+  .sub{
+    font-size:13px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:26px;
+  }
+  .intro{
+    max-width:640px;
+    font-size:17px;
+    color:#33302a;
+  }
+  main{max-width:1080px;margin:0 auto;padding:0 28px 40px}
+  figure{
+    margin:0;
+    padding:56px 0 8px;
+    border-bottom:1px solid var(--line);
+  }
+  .pair{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    align-items:start;
+  }
+  .shot{position:relative;background:#e7e2d8;overflow:hidden;aspect-ratio:4/5}
+  .shot img{display:block;width:100%;height:100%;object-fit:contain}
+  .shot span{
+    position:absolute;
+    left:10px;top:10px;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    background:rgba(20,18,15,0.72);
+    color:#f5f2ec;
+    padding:4px 8px;
+  }
+  figcaption{padding:24px 0 34px}
+  .tag{
+    display:inline-block;
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+    border:1px solid var(--accent);
+    padding:4px 9px;
+    margin-bottom:12px;
+  }
+  .num{
+    font-family:Georgia,serif;
+    font-size:14px;
+    color:var(--muted);
+    margin-right:10px;
+  }
+  figcaption h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:26px;
+    margin:0 0 10px;
+  }
+  figcaption p{
+    margin:0;
+    max-width:720px;
+    font-size:16px;
+    color:#33302a;
+  }
+  .reflection{
+    max-width:1080px;
+    margin:0 auto;
+    padding:64px 28px 96px;
+  }
+  .reflection h2{
+    font-family:Georgia,serif;
+    font-weight:normal;
+    font-size:34px;
+    margin:0 0 18px;
+  }
+  .reflection p{
+    max-width:720px;
+    font-size:17px;
+    margin:0 0 16px;
+  }
+  .reflection .meta{
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-top:26px;
+  }
+  @media (max-width:720px){
+    h1{font-size:42px}
+    .pair{grid-template-columns:1fr}
+    header{padding-top:48px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="sub">Assignment 4 &middot; Photo Composition</div>
+  <h1>Street Level</h1>
+  <p class="intro">
+    Six photographs taken on foot, at eye level, on streets, stairways and pavements.
+    Some were shot after dark, some in flat midday light, but all of them are about the
+    same thing: what a city looks like from the ground, at the height of a person walking
+    through it. Each frame uses one of the six compositional techniques from class, and
+    each edit was made to push the eye toward the point the composition was already
+    pointing at.
+  </p>
+</header>
+
+<main>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_01.jpg" alt="Original: a black cat sitting on an empty road at night"><span>Original</span></div>
+      <div class="shot"><img src="images/after_01.jpg" alt="Edited: the same cat, cropped tighter with deeper contrast"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Contrast</div>
+      <h2><span class="num">01</span>Night Road</h2>
+      <p>
+        The cat is almost the same value as the road, so the picture works by separating two
+        darknesses with the pale patch of asphalt behind it. I put the animal on the left
+        third and let the empty road fill the rest of the frame, so the eye finds the small
+        black shape and then keeps travelling down the street. That is the theme in one
+        frame: at street level, the night belongs to whatever is still out. In the edit I
+        cropped away the empty foreground, deepened the blacks, cooled the shadows and added
+        a vignette to hold the corners down.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_02.jpg" alt="Original: a parked silver car above a curving kerb"><span>Original</span></div>
+      <div class="shot"><img src="images/after_02.jpg" alt="Edited: the kerb given more contrast and warmer brick"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Leading Line</div>
+      <h2><span class="num">02</span>The Kerb</h2>
+      <p>
+        The kerb leaves the bottom right corner and runs up to the parked car, and the brick
+        paving repeats the same diagonal, so the line does the walking for you. I crouched
+        low to widen the near end and narrow the far end, which makes the street feel longer
+        than it is. A kerb is the most ordinary edge in the city, which is exactly why it
+        belongs in this set. I cropped out the sky and the far pavement, lifted the contrast
+        in the brick and cooled the grey of the road.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_03.jpg" alt="Original: an orange cat sitting on wooden steps"><span>Original</span></div>
+      <div class="shot"><img src="images/after_03.jpg" alt="Edited: cropped so the cat sits on a third, warmer tone"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Rule of Thirds</div>
+      <h2><span class="num">03</span>Steps</h2>
+      <p>
+        The cat sits on the intersection of the right and lower thirds, and the plank edges
+        run diagonally back to the top right corner, so the whole stairway points at it.
+        Leaving the left side empty keeps the cat off-centre and makes it look like it is
+        waiting for something. I cropped in from the left and the bottom, warmed the tone,
+        added contrast and sharpened the planks so the texture leads the eye up to the
+        animal.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_04.jpg" alt="Original: a lit shop entrance at night with a large sign"><span>Original</span></div>
+      <div class="shot"><img src="images/after_04.jpg" alt="Edited: doorway brightened, blacks cooled, vignette added"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Framing</div>
+      <h2><span class="num">04</span>Doorway</h2>
+      <p>
+        The lit entrance is a frame inside a frame: dark wall on both sides, the white
+        characters closing it on the right, the lanterns and the crowd sitting inside the
+        opening. I stood on the pavement so the doorway sits at eye height, and the lone
+        figure on the left gives the opening its scale. A shopfront is the threshold
+        everyone crosses, so it belongs here. In the edit I cropped away the empty street,
+        lifted the gold of the sign, cooled the blacks and used a vignette to leave the
+        doorway as the only bright thing.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_05.jpg" alt="Original: a van and a blue car parked on a street with two long shadows"><span>Original</span></div>
+      <div class="shot"><img src="images/after_05.jpg" alt="Edited: sky cropped, contrast raised, asphalt cooled"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Balance</div>
+      <h2><span class="num">05</span>Two Cars</h2>
+      <p>
+        A grey van on the left and a blue car with a giant can on the right carry roughly
+        equal weight, and the two long shadows in the foreground sit underneath them like a
+        second, darker pair. Nothing is centred, but the frame feels level because the
+        masses answer each other. This is the street at its most ordinary and its most
+        ridiculous at the same time. I cropped the sky down, increased contrast, cooled the
+        asphalt and darkened the edges so the eye stays on the vehicles and the shadows.
+      </p>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div class="pair">
+      <div class="shot"><img src="images/before_06.jpg" alt="Original: a fruit stall with watermelons and trays of cut fruit"><span>Original</span></div>
+      <div class="shot"><img src="images/after_06.jpg" alt="Edited: cropped closer, reds and yellows saturated"><span>Edited</span></div>
+    </div>
+    <figcaption>
+      <div class="tag">Colour</div>
+      <h2><span class="num">06</span>Fruit Stall</h2>
+      <p>
+        The red of the cut watermelon is the loudest note in the frame, and the deep green
+        rind around it makes the red louder still; the pale yellow trays at the bottom catch
+        the light so the lower half does not go flat. Colour works as a path here: red
+        first, then yellow, then the fruit further back. You only see a stall like this at
+        ground level. I cropped in to remove the shop interior, pushed saturation in the
+        reds and yellows, and added a vignette.
+      </p>
+    </figcaption>
+  </figure>
+
+</main>
+
+<section class="reflection">
+  <h2>Reflection</h2>
+  <p>
+    The strongest image is Two Cars. The balance was almost accidental — a white van on one
+    side, a blue car with a giant can on the other — but cropping the sky turned the frame
+    into four shapes that answer each other: two vehicles above, two long shadows below.
+    The edit did the rest. Contrast pulled the vehicles off the grey road, and cooling the
+    asphalt separated them from the warm brick. Before the crop it read as a snapshot with
+    a strip of empty sky across the top.
+  </p>
+  <p>
+    If I did the assignment again I would shoot each subject twice — once where I first saw
+    it, once after moving two steps. Most of the improvement in this set came from
+    position, not from editing. I would also wait for better light at the fruit stall. Flat
+    midday sun forced me to push saturation hard, and the reds are close to clipping; late
+    afternoon light would have done that work for me.
+  </p>
+  <div class="meta">155 words</div>
+</section>
+
+</body>
+</html>
